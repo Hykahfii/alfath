@@ -1,0 +1,33 @@
+name: uts_mobile_ui
+description: A simple Flutter UI project with 3 pages (Login, Dashboard, Profile)
+publish_to: "none" # karena ini hanya tugas lokal, bukan untuk di-publish ke pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Tambahan dependency lain bisa kamu tambahkan di bawah ini kalau perlu.
+  # (Saat ini, project ini hanya pakai Flutter bawaan — tidak ada package eksternal)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  # Aktifkan Material Design (wajib)
+  uses-material-design: true
+
+  # Menambahkan aset lokal agar bisa dipanggil lewat Image.asset()
+  assets:
+    - assets/logo.png
+    - assets/banner.png
+    - assets/avatar.png
